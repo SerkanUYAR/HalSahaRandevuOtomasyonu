@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CCC6CE9-1E95-43C6-B23F-7DA484DE9C9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HalıSahaOtomasyonu</RootNamespace>
+    <AssemblyName>HalıSahaOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Admin.Designer.cs">
+      <DependentUpon>Frm_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Arsiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Arsiv.Designer.cs">
+      <DependentUpon>Frm_Arsiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Gelir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Gelir.Designer.cs">
+      <DependentUpon>Frm_Gelir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Giderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Giderler.Designer.cs">
+      <DependentUpon>Frm_Giderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Ist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ist.Designer.cs">
+      <DependentUpon>Frm_Ist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mail.Designer.cs">
+      <DependentUpon>Frm_Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Randevu_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Randevu_Islemleri.Designer.cs">
+      <DependentUpon>Frm_Randevu_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="Frm_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Giris.Designer.cs">
+      <DependentUpon>Frm_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Randevu.Designer.cs">
+      <DependentUpon>Frm_Randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Admin.resx">
+      <DependentUpon>Frm_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Arsiv.resx">
+      <DependentUpon>Frm_Arsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Gelir.resx">
+      <DependentUpon>Frm_Gelir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Giderler.resx">
+      <DependentUpon>Frm_Giderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Giris.resx">
+      <DependentUpon>Frm_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Ist.resx">
+      <DependentUpon>Frm_Ist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mail.resx">
+      <DependentUpon>Frm_Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Randevu.resx">
+      <DependentUpon>Frm_Randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Randevu_Islemleri.resx">
+      <DependentUpon>Frm_Randevu_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dogalgaz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elektrik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gider-Avansı-Tarifesi-2017-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kira.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmp3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmp4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmp5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krmp6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-bottle-of-water-bottle-of-water-water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-chocolate-bars-chocolate-bar-white-chocolate-dark-chocolate-candy-choco-food-chocolate-syrup-cocoa-bean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-coca-cola-glass-bottle-coca-cola-glass-cola-bottle-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\su.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yıl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiye-futbol-federasyonu-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_icon-icons.com_68889.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
