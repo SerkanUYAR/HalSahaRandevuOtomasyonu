@@ -28,7 +28,7 @@ namespace HalıSahaOtomasyonu
             sk.Port = 587;  //PORT ADRESİ
             sk.Host = "smtp.gmail.com"; //GMAİL, OUTLOOK, HOTMAİL, HANGİSİNDEN GÖNDERİLECEĞİ
             sk.EnableSsl = true; //GÜVENLİK KATMANI
-            sk.Credentials = new NetworkCredential("mhrs5852@gmail.com", "SerkanKaan52*"); //GÖNDERİCİNİN MAİLİ VE ŞİFRESİ
+            sk.Credentials = new NetworkCredential("Meil Adresi", "ŞİFRE"); //GÖNDERİCİNİN MAİLİ VE ŞİFRESİ
             MailMessage mail = new MailMessage();
             mail.From = new MailAddress(TxtKimden.Text.ToString()); //GÖNDEREN KISMI
             mail.To.Add(TxtKime.Text.ToString()); //ALICI KISMI
@@ -58,7 +58,7 @@ namespace HalıSahaOtomasyonu
 
         private void Frm_Mail_Load(object sender, EventArgs e)
         {
-            TxtKimden.Text = "mhrs5852@gmail.com"; // göndern mail adresi.
+            TxtKimden.Text = "mhrs5852@gmail.com"; // göndern mail a
             listele();
         }
 
