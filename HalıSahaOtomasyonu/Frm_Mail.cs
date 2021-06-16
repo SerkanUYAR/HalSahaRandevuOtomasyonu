@@ -58,7 +58,7 @@ namespace HalıSahaOtomasyonu
 
         private void Frm_Mail_Load(object sender, EventArgs e)
         {
-            TxtKimden.Text = "mhrs5852@gmail.com"; // göndern mail a
+            TxtKimden.Text = "Meil adresi girilecek."; // göndern mail a
             listele();
         }
 
